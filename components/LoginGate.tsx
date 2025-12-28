@@ -19,7 +19,7 @@ export const LoginGate: React.FC<Props> = ({ onLogin }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (password.toLowerCase() === 'PeridotPump') {
+    if (password.toLowerCase() === 'peridotpump') {
       setMood('success');
       setMessage("Identity Verified. Welcome.");
       
