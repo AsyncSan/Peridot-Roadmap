@@ -154,6 +154,15 @@ const App: React.FC = () => {
             </div>
 
             <div className="flex items-center gap-4">
+                <a 
+                  href="https://peridot.finance/app" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hidden md:flex items-center gap-2 px-5 py-2.5 rounded-full font-bold transition-all transform hover:scale-105 active:scale-95 shadow-lg bg-slate-800 text-white border border-slate-700 hover:border-emerald-500/50 hover:bg-slate-700"
+                >
+                  Launch App <ExternalLink size={16} />
+                </a>
+
                 <button 
                 onClick={() => setIsMuted(!isMuted)}
                 className="p-2.5 rounded-full bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-all border border-slate-700"
