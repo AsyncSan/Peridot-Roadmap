@@ -253,7 +253,7 @@ export const ROADMAP_DATA: Milestone[] = [
   },
   {
     id: 'fintech-api',
-    date: '2026',
+    date: '2027',
     title: 'Fintech Money Market API',
     description: 'Launch of a public API that allows fintechs and partners to build on top of Peridot.',
     longDescription: 'Launch of a public API that allows fintechs and partners to build on top of Peridot’s money market infrastructure. Designed for scalability, compliance, and enterprise use.',
