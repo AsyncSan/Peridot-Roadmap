@@ -116,9 +116,10 @@ const App: React.FC = () => {
             {/* Custom Peridot Logo SVG */}
             <div className="relative w-10 h-10">
                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full drop-shadow-[0_0_10px_rgba(16,185,129,0.5)]">
-                  <path d="M20 10 H60 C85 10, 95 35, 60 60 H20 V10 Z" fill="#10b981" />
-                  <path d="M20 60 H40 V90 H20 V60 Z" fill="#10b981" />
-                  <circle cx="75" cy="75" r="12" fill="#10b981" />
+                  {/* P Shape: Even-odd fill to cut out the hole */}
+                  <path fillRule="evenodd" clipRule="evenodd" d="M25 10H55C75 10 90 25 90 45C90 65 75 80 55 80H45V90H25V10ZM45 60V30H55C63.2843 30 70 36.7157 70 45C70 53.2843 63.2843 60 55 60H45Z" fill="#10b981"/>
+                  {/* The Dot */}
+                  <circle cx="85" cy="85" r="10" fill="#10b981" />
                </svg>
             </div>
             <div className="flex flex-col">
