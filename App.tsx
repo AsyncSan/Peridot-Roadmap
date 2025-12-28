@@ -192,7 +192,8 @@ const App: React.FC = () => {
                     Peridot Roadmap <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">2026</span> 🚀
                 </h2>
                 <p className="text-slate-400 text-lg max-w-2xl mx-auto px-4 leading-relaxed">
-                    Join us on our journey to revolutionize cross-chain lending. 
+                    Cross chain money market that doesn’t hate you.
+                    <br />All chains, one app, zero bullshit. Internet Money, Made Simple.
                     <br className="hidden md:block"/>Click on the milestones to explore details.
                 </p>
             </div>
