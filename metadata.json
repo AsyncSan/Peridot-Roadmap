@@ -1,0 +1,7 @@
+{
+  "name": "Peridot Finance Roadmap Explorer",
+  "description": "An interactive, joyful, and voice-enabled roadmap explorer for Peridot.Finance.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
