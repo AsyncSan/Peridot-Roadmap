@@ -7,12 +7,13 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react()],
     define: {
-      // Prevents "process is not defined" crash in browser and injects API Key
+      // Prevents "process is not defined" crash and injects API Key
       'process.env.API_KEY': JSON.stringify(env.API_KEY),
-      'process.env': {} 
+      // Polyfill process.env to an empty object to prevent crashes in libs accessing it
+      'process.env': JSON.stringify({})
     },
     build: {
-      // Tells Vite to output to 'dist' to match vercel.json configuration
+      // Output to 'dist' to match vercel.json
       outDir: 'dist'
     }
   };
