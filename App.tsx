@@ -131,7 +131,7 @@ const App: React.FC = () => {
       )}
 
       {/* Main App Content - Blurred if behind gate (optional, but gate has its own blur backdrop) */}
-      <div className={`transition-all duration-1000 ${!isAuthenticated ? 'blur-sm scale-95 pointer-events-none opacity-0 h-screen overflow-hidden' : 'blur-0 scale-100 opacity-100'}`}>
+      <div className={`transition-all duration-1000 ${!isAuthenticated ? 'blur-sm scale-95 pointer-events-none opacity-0 h-screen overflow-hidden' : 'opacity-100'}`}>
         {/* Header */}
         <header className="fixed top-0 left-0 right-0 z-40 bg-[#0f172a]/80 backdrop-blur-lg border-b border-slate-800">
             <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
